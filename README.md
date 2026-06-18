@@ -138,7 +138,6 @@ Supported downstream backbones:
 - `sasrec_seq`
 - `gru4rec`
 - `bert4rec`
-- `poolrec`
 
 ### Outputs
 

@@ -9,7 +9,6 @@ from trainers.trainer import Trainer
 from models.SASRec import SASRec_seq
 from models.Bert4Rec import Bert4Rec
 from models.GRU4Rec import GRU4Rec
-from models.PoolRec import PoolRec
 from models.Adapter import Bert4RecPLUS, SASRecPLUS, GRU4RecPLUS
 from utils.utils import metric_report, metric_len_report, record_csv, metric_pop_report
 from utils.utils import metric_len_5group, metric_pop_5group
@@ -31,8 +30,6 @@ class SeqTrainer(Trainer):
                 self.model = Bert4RecPLUS(self.user_num, self.item_num, self.device, self.args)
             elif self.args.model_name == 'gru4rec':
                 self.model = GRU4RecPLUS(self.user_num, self.item_num, self.device, self.args)
-            elif self.args.model_name == 'poolrec':
-                self.model = PoolRec(self.user_num, self.item_num, self.device, self.args)
             else:
                 raise ValueError
         else:
@@ -42,8 +39,6 @@ class SeqTrainer(Trainer):
                 self.model = Bert4Rec(self.user_num, self.item_num, self.device, self.args)
             elif self.args.model_name == 'gru4rec':
                 self.model = GRU4Rec(self.user_num, self.item_num, self.device, self.args)
-            elif self.args.model_name == 'poolrec':
-                self.model = PoolRec(self.user_num, self.item_num, self.device, self.args)
             else:
                 raise ValueError
         

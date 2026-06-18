@@ -48,7 +48,7 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
 
     # generator is used to manage dataset
-    if args.model_name in ['gru4rec','poolrec']:
+    if args.model_name in ['gru4rec']:
         generator = Generator(args, logger, device)
     elif args.model_name in ['bert4rec']:
         generator = BertGenerator(args, logger, device)

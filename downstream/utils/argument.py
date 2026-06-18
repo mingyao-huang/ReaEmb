@@ -8,10 +8,8 @@ def get_main_arguments(parser):
     """Required parameters"""
 
     parser.add_argument("--model_name", 
-                        default='sasrec',
-                        choices=['bert4rec', 'gru4rec', 'sasrec_seq',   # base model
-                        'poolrec'
-                        ],
+                        default='sasrec_seq',
+                        choices=['bert4rec', 'gru4rec', 'sasrec_seq'],
                         type=str, 
                         required=False,
                         help="model name")
