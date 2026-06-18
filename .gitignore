@@ -1,0 +1,28 @@
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Backbone model weights
+qwen2.5_0.5b/
+
+# Training outputs and checkpoints
+saved/
+downstream/log/
+downstream/saved/
+grpo_tuning/output_grpo/
+
+# Generated embedding exports; keep conversion scripts in these folders.
+results/*/json/
+results/*/handled/
+results/*/qwen2.5/
+grpo_tuning/grpo_emb/*/json/
+grpo_tuning/grpo_emb/*/handled/
+
+# Editor/system files
+.DS_Store
