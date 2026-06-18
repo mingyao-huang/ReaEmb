@@ -1,6 +1,10 @@
 # ReaEmb: Reasoning-based Embedding Generator for Sequential Recommendation
 This is the implementation of the paper "Harmonizing Semantic and Collaborative in LLMs: Reasoning-based Embedding Generator for Sequential Recommendation".
 
+<p align="center">
+  <a href="figures/overview_framework.pdf"><strong>Overview Framework</strong></a>
+</p>
+
 ReaEmb contains a two-stage LLM-based item embedding generator and a downstream sequential recommendation framework:
 - **LRCL**: latent reasoning-enhanced contrastive learning for semantic item embedding generation.
 - **CRRL**: collaborative reward reinforcement learning for injecting item co-occurrence signals.
