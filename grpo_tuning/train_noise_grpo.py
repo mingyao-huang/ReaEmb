@@ -10,7 +10,7 @@ import trl
 from datasets import Dataset as HFDataset
 from transformers import AutoTokenizer
 
-from model import Qwen3RSEmbForGRPO
+from model import QwenRSEmbForGRPO
 from grpo_dataset import GRPODataset
 from grpo_trainer import NoiseGRPOEmbTrainer
 
@@ -72,7 +72,7 @@ def train(
 	if thought_token_id is None or thought_token_id == tokenizer.unk_token_id:
 		raise ValueError("Failed to resolve <|Thought|> token id for GRPO.")
 
-	model = Qwen3RSEmbForGRPO.from_pretrained(
+	model = QwenRSEmbForGRPO.from_pretrained(
 		base_model,
 		R3_think=r3_think,
 		pool_type=pool_type,

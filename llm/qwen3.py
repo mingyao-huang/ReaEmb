@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, PreTrainedModel
 from llm.r3_latent_thought import R3LatentThoughtAttention
 
 
-class Qwen3RSEmb(PreTrainedModel):
+class QwenRSEmb(PreTrainedModel):
     """HuggingFace-compatible wrapper around ``AutoModelForCausalLM`` that provides
     a sequence embedding interface and is compatible with PEFT and HF save/load.
 

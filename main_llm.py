@@ -29,7 +29,7 @@ from transformers import AutoTokenizer
 from transformers import TrainerCallback, TrainerState, TrainerControl, TrainingArguments
 from transformers.trainer_utils import PREFIX_CHECKPOINT_DIR
 
-from llm.qwen3 import Qwen3RSEmb as QwenRSEmb
+from llm.qwen3 import QwenRSEmb
 from llm.trainer_seq2seq import MedRecTrainer
 from llm.lora_cls import PeftModelForCLS
 from llm.arguments import DataTrainingArguments, ModelArguments

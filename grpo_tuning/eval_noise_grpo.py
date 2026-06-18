@@ -12,7 +12,7 @@ import torch
 from transformers import AutoTokenizer
 from tqdm import tqdm
 
-from model import Qwen3RSEmbForGRPO
+from model import QwenRSEmbForGRPO
 
 
 _PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -165,7 +165,7 @@ def extract_item_embs(
 			raise ValueError("base_model is required because model_path contains wrapper-only weights.")
 
 	init_path = base_model if base_model else model_path
-	model = Qwen3RSEmbForGRPO.from_pretrained(
+	model = QwenRSEmbForGRPO.from_pretrained(
 		init_path,
 		R3_think=r3_think,
 		pool_type=pool_type,

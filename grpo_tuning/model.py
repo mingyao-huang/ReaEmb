@@ -7,7 +7,7 @@ from transformers import Qwen2ForCausalLM
 from transformers.modeling_outputs import CausalLMOutputWithPast
 from transformers.models.qwen2.modeling_qwen2 import apply_rotary_pos_emb
 
-from llm.qwen3 import Qwen3RSEmb
+from llm.qwen3 import QwenRSEmb
 
 
 class VanillaRoPE(nn.Module):
@@ -152,7 +152,7 @@ class LatentModel(Qwen2ForCausalLM):
 		)
 
 
-class Qwen3RSEmbForGRPO(Qwen3RSEmb):
+class QwenRSEmbForGRPO(QwenRSEmb):
 	"""GRPO-compatible wrapper that exposes generate_embs and a causal-LM forward path."""
 
 	def generate_embs(self, input_ids, attention_mask):
