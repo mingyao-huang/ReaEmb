@@ -2,7 +2,7 @@
 This is the implementation of the paper "Harmonizing Semantic and Collaborative in LLMs: Reasoning-based Embedding Generator for Sequential Recommendation".
 
 <p align="center">
-  <img src="figures/overview_framework.png" alt="ReaEmb Overview Framework" width="95%">
+  <img src="figures/overview_framework.png" alt="ReaEmb Overview Framework" width="80%">
 </p>
 
 ReaEmb contains a two-stage LLM-based item embedding generator and a downstream sequential recommendation framework:
