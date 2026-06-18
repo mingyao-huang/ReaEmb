@@ -122,8 +122,6 @@ The converted embeddings will be saved under:
 grpo_tuning/grpo_emb/<dataset>/handled/
 ```
 
-`experiments/downstream.bash` will run this conversion automatically if the converted CRRL embedding file is missing.
-
 ## Run & Evaluate ReaEmb
 
 ### Train & Test Downstream SRS
